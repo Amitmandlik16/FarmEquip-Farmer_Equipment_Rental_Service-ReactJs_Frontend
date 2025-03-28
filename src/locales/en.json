@@ -1,0 +1,245 @@
+   {
+    
+      "logo": "FarmRent",
+      "equipment": "Equipment",
+      "book_equipment": "Book Equipment",
+      "register_equipment": "Register Equipment",
+      "scheduling": "Scheduling",
+      "live_tracking": "Live Tracking",
+      "farmgram": "FarmGram",
+      "language": "Language",
+      "english": "English",
+      "marathi": "Marathi",
+      "profile": "Profile",
+      "login_signup": "Login/Signup",
+      "login": "Login",
+      "rent_equipment": "Rent Equipment",
+    "smart_farming": "Smart Farming,",
+    "simplified_rentals": "Simplified Rentals",
+    "hero_description": "Get access to high-quality farming equipment without the hassle. Rent at affordable prices and focus on what matters most—your crops.",
+    "browse_equipment": "Browse Equipment",
+    "get_started": "Get Started",
+    "title": "Start Renting or Listing Equipment Today!",
+    "description": "Whether you need equipment, have equipment to rent, or are looking to offer or find labor services, join us and make farming easier, more efficient, and cost-effective.",
+    "role_prompt": "Please select your role to get started. Are you a Farmer or a Laborer?",
+    "farmer": "Farmer",
+    "laborer": "Laborer",
+    "heading": "Why FarmRent?",
+    "description1": "Unlock the power of smart farming with our advanced rental system.",
+    "features": [
+      {
+        "title": "Smart Equipment Catalog",
+        "description": "Browse a wide range of farming equipment with detailed specifications and availability."
+      },
+      {
+        "title": "Secure Booking & Payment",
+        "description": "Book and pay securely with our trusted payment gateway, ensuring safe transactions."
+      },
+      {
+        "title": "Intelligent Scheduling",
+        "description": "Optimize equipment rental timing with AI-powered scheduling for efficiency."
+      },
+      {
+        "title": "Location-Based Services",
+        "description": "Find equipment near your farm with real-time location tracking and availability."
+      },
+      {
+        "title": "Multi-Language Support",
+        "description": "Use the platform in multiple languages for a farmer-friendly experience."
+      },
+      {
+        "title": "AI Assistant Chatbot",
+        "description": "Get instant support and recommendations using our AI-powered chatbot."
+      }
+    ],
+
+
+    "howItWorks": "How It Works?",
+  "renter": "Renter",
+  "supplier": "Supplier",
+  "renterSteps": [
+    {
+      "text": "Browse Equipment",
+      "subtext": "Explore various farming tools and machines."
+    },
+    {
+      "text": "Select Equipment",
+      "subtext": "Choose the right equipment for your needs."
+    },
+    {
+      "text": "Make Payment",
+      "subtext": "Securely complete your rental transaction."
+    },
+    {
+      "text": "Receive Equipment",
+      "subtext": "Get the equipment delivered to your location."
+    },
+    {
+      "text": "Return After Use",
+      "subtext": "Send the equipment back after usage."
+    }
+  ],
+  "supplierSteps": [
+    {
+      "text": "Register & List Equipment",
+      "subtext": "Sign up and add your equipment details."
+    },
+    {
+      "text": "Set Availability & Pricing",
+      "subtext": "Choose rental terms and pricing."
+    },
+    {
+      "text": "Accept Rentals",
+      "subtext": "Approve rental requests from users."
+    },
+    {
+      "text": "Deliver Equipment",
+      "subtext": "Ensure timely delivery to renters."
+    },
+    {
+      "text": "Earn Money",
+      "subtext": "Receive payments for your rentals."
+    }
+  ],
+
+  "title1": "Frequently Asked Questions",
+    "whatIs": "What is the Farming Equipment Rental System?",
+    "whatIsAnswer": "It is a platform where farmers can rent or lease agricultural equipment easily, ensuring affordability and accessibility.",
+    "howToRent": "How do I rent equipment?",
+    "howToRentAnswer": "Sign up for an account, browse available equipment, check availability, and make a booking online.",
+    "securityDeposit": "Is there a security deposit required?",
+    "securityDepositAnswer": "Yes, a refundable security deposit may be required depending on the equipment provider's policy.",
+    "listEquipment": "Can I list my own farming equipment for rent?",
+    "listEquipmentAnswer": "Yes! Equipment owners can register and list their farming tools or machinery for rent.",
+    "customerSupport": "Is there customer support available?",
+    "customerSupportAnswer": "Yes, we provide 24/7 customer support to assist with any queries or issues.",
+
+
+    "title2": "Login to your account",
+    "roleSelection": {
+      "farmer": "Farmer",
+      "laborer": "Laborer"
+    },
+    "farmerLogin": "Farmer Login",
+    "laborerLogin": "Laborer Login",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "placeholder": {
+      "username": "Enter your username",
+      "email": "Enter your email",
+      "password": "Enter your password"
+    },
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Login now",
+    "loading": "Logging in...",
+    "noAccount": "Don't have an account?",
+    "signup": "SignUp",
+    "adminLogin": "Login as Admin?",
+    "welcome": {
+      "title": "WELCOME BACK!",
+      "message": "You're just one step away from a smarter and more efficient equipment rental experience"
+    },
+
+    "signup1": "Farmer Signup",
+    "basicInfo": "Basic Information",
+    "name": "Name",
+    "firstName": "First Name",
+    "middleName": "Middle Name",
+    "lastName": "Last Name",
+    "username1": "Username",
+    "password1": "Password",
+    "dob": "Date of Birth",
+    "contactInfo": "Contact Information",
+    "email1": "E-mail",
+    "mobileNumber": "Mobile Number",
+    "address": "Address",
+    "state": "State",
+    "district": "District",
+    "village": "Village",
+    "taluka": "Taluka",
+    "landmark": "Landmark",
+    "profileImage": "Profile Image",
+    "register": "Register",
+    "registering": "Registering...",
+    "alreadyHaveAccount": "Already Have an Account?",
+    "login1": "Login",
+    "errorFetchingCoordinates": "Error fetching coordinates. Please try again.",
+    "errorUploadingImage": "Error uploading image. Please try again.",
+    "errorRegistering": "Error registering farmer. Please try again.",
+    "successRegistration": "Registration successful!",
+
+
+    "title3": "Forgot Password",
+    "placeholderUsername": "Enter username",
+    "placeholderEmail": "Enter email",
+    "submit": "Submit",
+    "successMessage": "A temporary password has been sent to your email.",
+    "errorMessage": "Failed to process request. Please check your details.",
+
+
+
+    "title4": "Register Equipment",
+    "equipmentInformation": "Equipment Information",
+    "equipmentName": "Equipment Name",
+    "category": "Category",
+    "brand": "Brand",
+    "price": "Price",
+    "stock": "Stock",
+    "equipmentType": "Equipment Type",
+    "description2": "Description",
+    "condition": "Condition",
+    "new": "New",
+    "used": "Used",
+    "refurbished": "Refurbished",
+    "warranty": "Warranty",
+    "manufactureYear": "Manufacture Year",
+    "usageDuration": "Usage Duration",
+    "locationDetails": "Location",
+    "location": "Location",
+    "pincode": "Pincode",
+    "images": "Images",
+    "equipmentImages": "Equipment Images",
+    "selectedImages": "Selected Images",
+    "registerButton": "Register Equipment",
+    "errorFetchingLocation": "Failed to fetch location. Please enable location services.",
+    "successMessage1": "Equipment registered successfully!",
+    "failureMessage": "Failed to register equipment.",
+
+
+    
+    "equipment_details": "Equipment Details",
+    "equipment_name": "Equipment Name",
+    "description3": "Description",
+    "booking_calendar": "Booking Calendar",
+    "booked_dates": "Booked Dates",
+    "current_date": "Current Date",
+    "selected_date": "Selected Date",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "payment_method": "Payment Method",
+    "cash_on_delivery": "Cash on Delivery",
+    "online_payment": "Online Payment",
+    "rent_now": "Rent Now",
+    "equipment_not_found": "Equipment not found.",
+    "booking_form": "Booking Form",
+    "booking_successful": "Booking request sent successfully!",
+    "receipt_download_successful": "Receipt downloaded successfully!",
+    "booking_error": "Failed to complete booking or download receipt. Please try again.",
+    "error_fetching_equipment": "Error fetching equipment details.",
+    "error_fetching_calendar": "Error fetching booking calendar.",
+
+
+
+    "inviteOthers": "Invite Others",
+  "invitationSent": "Invitation sent successfully!",
+  "invitationFailed": "Failed to send invitation.",
+  "errorOccurred": "Error occurred while sending invitation.",
+  "enterName": "Enter name",
+  "enterEmail": "Enter email",
+  "sendInvitation": "Send Invitation",
+  "sending": "Sending...",
+
+  "recommendation":"Reccomendation"
+  }
+  
