@@ -14,7 +14,7 @@ const BookEquipment = () => {
   const fetchEquipment = async () => {
     try {
       const response = await axios.get(
-        "https://famerequipmentrental-springboot-production.up.railway.app/admin/equipments"
+        "http://localhost:8080/admin/equipments"
       );
       setEquipmentList(response.data);
       setLoading(false);
@@ -27,7 +27,7 @@ const BookEquipment = () => {
   const handleDownloadImage = async (imageId) => {
     try {
       const response = await axios.get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/api/files/download/${imageId}`,
+        `http://localhost:8080/api/files/download/${imageId}`,
         { responseType: "blob" }
       );
 
@@ -69,7 +69,7 @@ const BookEquipment = () => {
               <img
                 src={
                   item.imageUrls.length > 0
-                    ? `https://famerequipmentrental-springboot-production.up.railway.app${item.imageUrls[0]}`
+                    ? `http://localhost:8080${item.imageUrls[0]}`
                     : "https://via.placeholder.com/150"
                 }
                 alt={item.equipment.name}

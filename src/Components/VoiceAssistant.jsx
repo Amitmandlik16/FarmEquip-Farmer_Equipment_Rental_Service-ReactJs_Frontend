@@ -44,7 +44,7 @@ const VoiceAssistant = () => {
 
                 try {
                     const response = await axios.post(
-                        "https://famerequipmentrental-springboot-production.up.railway.app/voice-assistant/audio",
+                        "http://localhost:8080/voice-assistant/audio",
                         formData,
                         {
                             headers: {

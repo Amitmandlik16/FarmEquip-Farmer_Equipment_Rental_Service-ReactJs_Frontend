@@ -82,7 +82,7 @@ const SignupForm = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/api/files/upload",
+        "http://localhost:8080/api/files/upload",
         imageFormData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -144,7 +144,7 @@ const SignupForm = () => {
     // Register the farmer
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/register",
+        "http://localhost:8080/farmer/register",
         registrationData
       );
       setSuccess("Registration successful!");

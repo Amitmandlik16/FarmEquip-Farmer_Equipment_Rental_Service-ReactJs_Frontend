@@ -17,7 +17,7 @@ const ForgotPassword = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/forgot-password",
+        "http://localhost:8080/farmer/forgot-password",
         formData
       );
       if (response.status === 200) {

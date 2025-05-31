@@ -16,7 +16,7 @@ const MyEquipment = () => {
       try {
         const token = localStorage.getItem("token"); // Authentication token
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/farmer/equipment/all/${user.id}`,
+          `http://localhost:8080/farmer/equipment/all/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -95,7 +95,7 @@ const MyEquipment = () => {
                   item.imageUrls.map((url, index) => (
                     <img
                       key={index}
-                      src={`https://famerequipmentrental-springboot-production.up.railway.app${url}`}
+                      src={`http://localhost:8080${url}`}
                       alt={`Equipment ${index + 1}`}
                       className="w-32 h-32 object-cover rounded-lg border border-gray-300 dark:border-gray-600 hover:scale-110 transition-transform duration-200"
                     />

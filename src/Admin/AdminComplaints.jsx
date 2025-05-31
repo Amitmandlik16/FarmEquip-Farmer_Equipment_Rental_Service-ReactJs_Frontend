@@ -10,7 +10,7 @@ const AdminComplaints = () => {
     const fetchComplaints = async () => {
       try {
         const response = await fetch(
-          "https://famerequipmentrental-springboot-production.up.railway.app/farmer/complaint/all"
+          "http://localhost:8080/farmer/complaint/all"
         );
         if (!response.ok) throw new Error("Failed to fetch complaints");
 

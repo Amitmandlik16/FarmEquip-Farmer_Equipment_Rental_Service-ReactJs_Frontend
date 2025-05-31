@@ -16,7 +16,7 @@ const MyEquipment = () => {
       try {
         const token = localStorage.getItem("token"); // Authentication token
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/booking/requests/${user.id}`,
+          `http://localhost:8080/booking/requests/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ const MyEquipment = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://famerequipmentrental-springboot-production.up.railway.app/booking/update/${itemId}/${newStatus}`,
+        `http://localhost:8080/booking/update/${itemId}/${newStatus}`,
         {},
         {
           headers: {

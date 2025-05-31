@@ -16,7 +16,7 @@ const LaborInfo = ({ labor, onBack }) => {
     const fetchLaborAvailability = async () => {
       try {
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/booking/labor/calendar/${labor.id}`
+          `http://localhost:8080/booking/labor/calendar/${labor.id}`
         );
         setBookedDates(response.data.bookedDates);
       } catch (error) {
@@ -43,7 +43,7 @@ const LaborInfo = ({ labor, onBack }) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/booking/labor/request",
+        "http://localhost:8080/booking/labor/request",
         requestBody,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -55,7 +55,7 @@ const LaborInfo = ({ labor, onBack }) => {
       const bookingId = response.data.id;
 
       const receiptResponse = await axios.get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/booking/labor/download-receipt/${bookingId}`,
+        `http://localhost:8080/booking/labor/download-receipt/${bookingId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "blob",

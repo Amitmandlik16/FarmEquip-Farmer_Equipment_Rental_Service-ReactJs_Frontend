@@ -8,7 +8,7 @@ const UserManagement = () => {
   const fetchUsers = () => {
     axios
       .get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/admin/farmers`
+        `http://localhost:8080/admin/farmers`
       )
       .then((response) => setUsers(response.data))
       .catch((error) => console.error("Error fetching users:", error));
@@ -21,7 +21,7 @@ const UserManagement = () => {
     }
     axios
       .get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/farmer/${id}`
+        `http://localhost:8080/farmer/${id}`
       )
       .then((response) => setUsers([response.data]))
       .catch((error) => console.error("Error searching user:", error));
@@ -35,7 +35,7 @@ const UserManagement = () => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios
         .delete(
-          `https://famerequipmentrental-springboot-production.up.railway.app/farmer/${id}`
+          `http://localhost:8080/farmer/${id}`
         )
         .then(() => setUsers(users.filter((user) => user.id !== userId)))
         .catch((error) => console.error("Error deleting user:", error));

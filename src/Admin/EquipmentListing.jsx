@@ -11,7 +11,7 @@ const EquipmentListing = () => {
     const fetchEquipments = async () => {
       try {
         const response = await axios.get(
-          "https://famerequipmentrental-springboot-production.up.railway.app/admin/equipments"
+          "http://localhost:8080/admin/equipments"
         );
         setEquipments(response.data);
       } catch (err) {
@@ -70,7 +70,7 @@ const EquipmentListing = () => {
                     {imageUrls.map((url, index) => (
                       <img
                         key={index}
-                        src={`https://famerequipmentrental-springboot-production.up.railway.app${url}`}
+                        src={`http://localhost:8080${url}`}
                         alt={`Image ${index + 1}`}
                         className="h-24 w-24 sm:h-32 sm:w-32 object-cover rounded-md"
                       />

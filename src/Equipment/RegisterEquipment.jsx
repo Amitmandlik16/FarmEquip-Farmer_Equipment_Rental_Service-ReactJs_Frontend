@@ -78,7 +78,7 @@ const RegisterEquipment = () => {
         formData.append("file", file);
 
         const response = await axios.post(
-          "https://famerequipmentrental-springboot-production.up.railway.app/api/files/upload",
+          "http://localhost:8080/api/files/upload",
           formData,
           {
             headers: {
@@ -109,7 +109,7 @@ const RegisterEquipment = () => {
 
     try {
       const response = await fetch(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/equipment/register",
+        "http://localhost:8080/farmer/equipment/register",
         {
           method: "POST",
           headers: {

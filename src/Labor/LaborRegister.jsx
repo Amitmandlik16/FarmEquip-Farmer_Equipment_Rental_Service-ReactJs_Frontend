@@ -62,7 +62,7 @@ const LaborRegister = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/api/files/upload",
+        "http://localhost:8080/api/files/upload",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -92,7 +92,7 @@ const LaborRegister = () => {
       };
 
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/labor/register",
+        "http://localhost:8080/labor/register",
         finalData
       );
 

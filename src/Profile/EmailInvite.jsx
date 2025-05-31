@@ -25,7 +25,7 @@ const EmailInvite = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/invitemail",
+        "http://localhost:8080/farmer/invitemail",
         { ...formData, id: user.id }
       );
 

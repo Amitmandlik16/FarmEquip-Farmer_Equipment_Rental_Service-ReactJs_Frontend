@@ -10,7 +10,7 @@ const AdminFeedback = () => {
     const fetchFeedbacks = async () => {
       try {
         const response = await fetch(
-          "https://famerequipmentrental-springboot-production.up.railway.app/farmer/feedback/all"
+          "http://localhost:8080/farmer/feedback/all"
         );
         if (!response.ok) throw new Error("Failed to fetch feedbacks");
 

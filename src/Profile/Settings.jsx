@@ -44,7 +44,7 @@ const Settings = () => {
     try {
       const userData = JSON.parse(localStorage.getItem("user")); // Assuming token is stored
       const response = await axios.put(
-        `https://famerequipmentrental-springboot-production.up.railway.app/farmer/update/${userData.id}`,
+        `http://localhost:8080/farmer/update/${userData.id}`,
         updatedUser,
         {
           headers: {
@@ -86,7 +86,7 @@ const Settings = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/update-password",
+        "http://localhost:8080/farmer/update-password",
         passwordData,
         {
           headers: {

@@ -11,7 +11,7 @@ const AdminPosts = () => {
       try {
         const token = localStorage.getItem("token"); // Retrieve authentication token
         const response = await axios.get(
-          "https://famerequipmentrental-springboot-production.up.railway.app/posts/all",
+          "http://localhost:8080/posts/all",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -53,7 +53,7 @@ const AdminPosts = () => {
               >
                 {post.imageUrls && post.imageUrls.length > 0 && (
                   <img
-                    src={`https://famerequipmentrental-springboot-production.up.railway.app${post.imageUrls[0]}`}
+                    src={`http://localhost:8080${post.imageUrls[0]}`}
                     alt="Post"
                     className="w-full h-60 object-cover rounded-lg mb-3"
                   />

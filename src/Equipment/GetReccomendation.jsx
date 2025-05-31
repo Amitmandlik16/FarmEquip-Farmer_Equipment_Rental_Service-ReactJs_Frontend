@@ -40,7 +40,7 @@ const GetRecommendation = () => {
     try {
       const equipmentPromises = recommendationIds.map((id) =>
         axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/farmer/equipment/${id}`
+          `http://localhost:8080/farmer/equipment/${id}`
         )
       );
       const equipmentResponses = await Promise.all(equipmentPromises);
@@ -72,7 +72,7 @@ const GetRecommendation = () => {
     console.log(formData);
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/equipment/recommend",
+        "http://localhost:8080/farmer/equipment/recommend",
         formData,
         {
           headers: {
@@ -176,7 +176,7 @@ const GetRecommendation = () => {
                 {/* <img
                                     src={
                                         item.imageUrls.length > 0
-                                            ? `https://famerequipmentrental-springboot-production.up.railway.app${equipment.equipment.imageUrls[0]}`
+                                            ? `http://localhost:8080${equipment.equipment.imageUrls[0]}`
                                             : "https://via.placeholder.com/150"
                                     }
                                     alt={item.equipment.name}

@@ -8,7 +8,7 @@ const Rentals = () => {
 
   useEffect(() => {
     fetch(
-      `https://famerequipmentrental-springboot-production.up.railway.app/booking/requests/${user.id}`
+      `http://localhost:8080/booking/requests/${user.id}`
     ) // Replace with actual API endpoint
       .then((response) => response.json())
       .then((data) => {

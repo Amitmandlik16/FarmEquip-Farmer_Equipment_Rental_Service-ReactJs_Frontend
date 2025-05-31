@@ -16,7 +16,7 @@ const SearchLabors = () => {
   const fetchAllLabors = async () => {
     try {
       const response = await fetch(
-        "https://famerequipmentrental-springboot-production.up.railway.app/labor/all"
+        "http://localhost:8080/labor/all"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch labor data.");
@@ -42,8 +42,8 @@ const SearchLabors = () => {
       const encodedQuery = encodeURIComponent(searchQuery);
       const apiEndpoint =
         searchType === "skill"
-          ? `https://famerequipmentrental-springboot-production.up.railway.app/labor/skill/${encodedQuery}`
-          : `https://famerequipmentrental-springboot-production.up.railway.app/labor/location/${encodedQuery}`;
+          ? `http://localhost:8080/labor/skill/${encodedQuery}`
+          : `http://localhost:8080/labor/location/${encodedQuery}`;
 
       const response = await fetch(apiEndpoint);
 

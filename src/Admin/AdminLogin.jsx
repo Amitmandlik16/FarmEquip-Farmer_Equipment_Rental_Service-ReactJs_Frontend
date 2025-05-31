@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/admin/login",
+        "http://localhost:8080/admin/login",
         { username, password },
         {
           headers: {

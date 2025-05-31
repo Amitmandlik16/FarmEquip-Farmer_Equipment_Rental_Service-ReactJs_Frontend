@@ -13,7 +13,7 @@ const LaborRequest = () => {
     const fetchRequests = async () => {
       try {
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/booking/labor/requests/${farmerId}`
+          `http://localhost:8080/booking/labor/requests/${farmerId}`
         );
         setRequests(response.data);
       } catch (err) {
@@ -30,7 +30,7 @@ const LaborRequest = () => {
   const markComplete = async (bookingId) => {
     try {
       await axios.put(
-        `https://famerequipmentrental-springboot-production.up.railway.app/booking/labor/mark-completed/${bookingId}`
+        `http://localhost:8080/booking/labor/mark-completed/${bookingId}`
       );
       setRequests((prev) =>
         prev.map((req) =>

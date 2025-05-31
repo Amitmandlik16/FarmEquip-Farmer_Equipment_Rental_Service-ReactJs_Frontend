@@ -23,8 +23,8 @@ const Login = () => {
     try {
       const endpoint =
         selected === "farmer"
-          ? "https://famerequipmentrental-springboot-production.up.railway.app/farmer/login"
-          : "https://famerequipmentrental-springboot-production.up.railway.app/labor/login";
+          ? "http://localhost:8080/farmer/login"
+          : "http://localhost:8080/labor/login";
 
       const response =
         selected === "farmer"

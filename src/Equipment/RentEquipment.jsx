@@ -25,7 +25,7 @@ const RentEquipment = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/farmer/equipment/${eqId}`,
+          `http://localhost:8080/farmer/equipment/${eqId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -43,7 +43,7 @@ const RentEquipment = () => {
     const fetchBookingCalendar = async () => {
       try {
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/booking/calendar/${eqId}`
+          `http://localhost:8080/booking/calendar/${eqId}`
         );
         console.log(response.data);
         setBookedDates(response.data.bookedDates);
@@ -73,7 +73,7 @@ const RentEquipment = () => {
 
       // Step 1: Send booking request
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/booking/request",
+        "http://localhost:8080/booking/request",
         requestBody,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -87,7 +87,7 @@ const RentEquipment = () => {
 
       // Step 3: Download the receipt
       const receiptResponse = await axios.get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/booking/pdf/${bookingId}`,
+        `http://localhost:8080/booking/pdf/${bookingId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "blob", // Important for downloading files
@@ -166,7 +166,7 @@ const RentEquipment = () => {
       {/* Left Side - Images */}
       <div className="w-full md:w-1/2">
         <img
-          src={`https://famerequipmentrental-springboot-production.up.railway.app${mainImage}`}
+          src={`http://localhost:8080${mainImage}`}
           alt="Main Equipment"
           className="w-full h-64 object-cover rounded-lg shadow-md"
         />
@@ -174,7 +174,7 @@ const RentEquipment = () => {
           {equipment.imageUrls.map((url, index) => (
             <img
               key={index}
-              src={`https://famerequipmentrental-springboot-production.up.railway.app${url}`}
+              src={`http://localhost:8080${url}`}
               alt={`Thumbnail ${index + 1}`}
               className={`w-20 h-20 object-cover rounded-md cursor-pointer ${
                 mainImage === url ? "border-2 border-green-600" : ""

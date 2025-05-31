@@ -10,7 +10,7 @@ const LaborManagement = () => {
   const fetchLabors = () => {
     axios
       .get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/labor/all`
+        `http://localhost:8080/labor/all`
       )
       .then((response) => setLabors(response.data))
       .catch((error) => console.error("Error fetching labors:", error));
@@ -24,7 +24,7 @@ const LaborManagement = () => {
     }
     axios
       .get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/labor/${id}`
+        `http://localhost:8080/labor/${id}`
       )
       .then((response) => setLabors([response.data]))
       .catch((error) => console.error("Error searching labor:", error));
@@ -39,7 +39,7 @@ const LaborManagement = () => {
     if (window.confirm("Are you sure you want to delete this labor?")) {
       axios
         .delete(
-          `https://famerequipmentrental-springboot-production.up.railway.app/labor/${id}`
+          `http://localhost:8080/labor/${id}`
         )
         .then(() => setLabors(labors.filter((labor) => labor.id !== id)))
         .catch((error) => console.error("Error deleting labor:", error));

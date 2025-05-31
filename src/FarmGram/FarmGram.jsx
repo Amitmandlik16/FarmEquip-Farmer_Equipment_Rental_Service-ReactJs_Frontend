@@ -34,7 +34,7 @@ const FarmGram = () => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://famerequipmentrental-springboot-production.up.railway.app/posts/all"
+          "http://localhost:8080/posts/all"
         );
         setPosts(response.data.reverse()); // Reverse the order of posts to display new posts first
       } catch (error) {
@@ -45,7 +45,7 @@ const FarmGram = () => {
     const fetchProfilePosts = async (ownerId) => {
       try {
         const response = await axios.get(
-          `https://famerequipmentrental-springboot-production.up.railway.app/posts/owner/${ownerId}`
+          `http://localhost:8080/posts/owner/${ownerId}`
         );
         setProfilePosts(response.data);
       } catch (error) {
@@ -67,7 +67,7 @@ const FarmGram = () => {
   const handleLike = async (postId) => {
     try {
       await axios.post(
-        `https://famerequipmentrental-springboot-production.up.railway.app/posts/like/${postId}/1` // Replace 1 with the actual owner ID
+        `http://localhost:8080/posts/like/${postId}/1` // Replace 1 with the actual owner ID
       );
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
@@ -107,7 +107,7 @@ const FarmGram = () => {
   const fetchComments = async (postId) => {
     try {
       const response = await axios.get(
-        `https://famerequipmentrental-springboot-production.up.railway.app/posts/comments/${postId}`
+        `http://localhost:8080/posts/comments/${postId}`
       );
       setComments(response.data);
     } catch (error) {
@@ -119,7 +119,7 @@ const FarmGram = () => {
     if (newComment.trim()) {
       try {
         await axios.post(
-          "https://famerequipmentrental-springboot-production.up.railway.app/posts/addComment",
+          "http://localhost:8080/posts/addComment",
           {
             postId: postId,
             ownerId: 1, // Replace with the actual owner ID
@@ -137,7 +137,7 @@ const FarmGram = () => {
   const handleDeleteComment = async (commentId) => {
     try {
       await axios.delete(
-        `https://famerequipmentrental-springboot-production.up.railway.app/posts/comment/delete/${commentId}/1` // Replace 1 with the actual owner ID
+        `http://localhost:8080/posts/comment/delete/${commentId}/1` // Replace 1 with the actual owner ID
       );
       fetchComments(currentPost.id);
     } catch (error) {
@@ -153,7 +153,7 @@ const FarmGram = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/api/files/upload",
+        "http://localhost:8080/api/files/upload",
         formData,
         {
           headers: {
@@ -182,7 +182,7 @@ const FarmGram = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/posts/create",
+        "http://localhost:8080/posts/create",
         postData,
         {
           headers: {
@@ -222,7 +222,7 @@ const FarmGram = () => {
                   <FaArrowLeft />
                 </button>
                 <img
-                  src={`https://famerequipmentrental-springboot-production.up.railway.app${currentPost.imageUrls[currentImageIndex]}`}
+                  src={`http://localhost:8080${currentPost.imageUrls[currentImageIndex]}`}
                   alt="Post"
                   className="w-full h-64 object-cover rounded-md"
                 />
@@ -321,7 +321,7 @@ const FarmGram = () => {
                     >
                       {post.imageUrls && post.imageUrls.length > 0 && (
                         <img
-                          src={`https://famerequipmentrental-springboot-production.up.railway.app${post.imageUrls[0]}`}
+                          src={`http://localhost:8080${post.imageUrls[0]}`}
                           alt="Post"
                           className="w-full h-60 object-cover rounded-lg mb-3"
                         />

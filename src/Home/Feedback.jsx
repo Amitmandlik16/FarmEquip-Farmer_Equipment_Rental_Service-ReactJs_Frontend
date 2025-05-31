@@ -33,7 +33,7 @@ const Feedback = () => {
 
     try {
       const response = await axios.post(
-        "https://famerequipmentrental-springboot-production.up.railway.app/farmer/feedback", // Update with actual endpoint
+        "http://localhost:8080/farmer/feedback", // Update with actual endpoint
         feedbackData,
         {
           headers: {
